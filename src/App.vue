@@ -1,17 +1,25 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app" class="container">
+    <Filters />
+    <MoviesTable />
+    <MoviesByGenre />
+    <MoviesByActor />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import MoviesTable from './components/MoviesTable.vue';
+import MoviesByGenre from './components/MoviesByGenreList.vue';
+import MoviesByActor from './components/MoviesByActorList.vue';
+import Filters from './components/Filters.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld,
+    MoviesTable,
+    MoviesByGenre,
+    MoviesByActor,
+    Filters,
   },
 };
 </script>
